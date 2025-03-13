@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom/client'; // ✅ Correct for React 18 & 19
 import App from './App';
-import './styles/global.css'; 
+import { DogProvider } from './context/DogContext';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <DogProvider>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </DogProvider>
+  </React.StrictMode>
 );

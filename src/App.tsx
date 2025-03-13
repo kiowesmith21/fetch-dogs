@@ -1,16 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
-// import Login from './pages/Login';
-// import Search from './pages/Search';
-// import Favorites from './pages/Favorites';
+import React from "react";
+import AppRoutes from "./routes";
 
-function App() {
-  return (
-    <Routes>
-      {/* <Route path="/" element={<Login />} />
-      <Route path="/search" element={<Search />} />
-      <Route path="/favorites" element={<Favorites />} /> */}
-    </Routes>
-  );
-}
+const App: React.FC = () => {
+  return <AppRoutes />;
+};
 
 export default App;
